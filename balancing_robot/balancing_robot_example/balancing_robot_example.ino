@@ -125,11 +125,11 @@ void setup(){
     devStatus = mpu.dmpInitialize();
  
     // supply your own gyro offsets here, scaled for min sensitivity
-    mpu.setXGyroOffset(220);
-    mpu.setYGyroOffset(76);
-    mpu.setZGyroOffset(-85);
-    mpu.setZAccelOffset(1788); // 1688 factory default for my test chip
- 
+    mpu.setZAccelOffset(952); // 1688 factory default for my test chip
+    mpu.setXGyroOffset(104);
+    mpu.setYGyroOffset(-9);
+    mpu.setZGyroOffset(16);
+    
     // devStatus 값이 0 이면 정상작동, 0이 아니면 오작동입니다
     // make sure it worked (returns 0 if so)
     if (devStatus == 0){
